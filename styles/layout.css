@@ -1,0 +1,30 @@
+header {
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 4px solid black ;
+    margin: 7px;
+}
+
+.fishImage {
+    max-width: 20rem;
+}
+
+#fishGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2%;
+}
+
+#tipsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2%;
+}
+
+#locationsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2%;
+}

@@ -1,10 +1,11 @@
 import { database } from './aquariumData.js';
 
 export const tipList = () => {
-    let fishTipsHTML = ''
+    const tipsHeader = '<header>Tips</header>'
+    let tipslListHTML = ''
     
     database.tips.map(fish => {
-        fishTipsHTML += `
+        tipslListHTML += `
         
         <h1>${fish.topic}:</h1>
         <ul class="tips">
@@ -13,7 +14,7 @@ export const tipList = () => {
 
         `
     })
-    return fishTipsHTML
+    return tipsHeader + '<section id="tipsGrid">' + tipslListHTML + '<section/>'
 }
 
 /* <li class="tip"> element inside a <ul class="tips"> */
